@@ -29,3 +29,5 @@
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=anhdev99&show_icons=true&locale=en&layout=compact" alt="anhdev99" /></p>
 
 [![anhdev99's GitHub | Stats](https://stats.quine.sh/anhdev99/github?theme=dark)](https://quine.sh?utm_source=widgets&utm_campaign=anhdev99)
+[![anhdev99's GitHub | Topics Over Time](https://stats.quine.sh/anhdev99/topics-over-time?theme=dark)](https://quine.sh?utm_source=widgets&utm_campaign=anhdev99)
+[![anhdev99's GitHub | Languages Over Time](https://stats.quine.sh/anhdev99/languages-over-time?theme=dark)](https://quine.sh?utm_source=widgets&utm_campaign=anhdev99)
