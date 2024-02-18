@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **C#, .Net, Vuejs, AI,...**
 
-- 💬 Ask me about **I'm a full stack programmer, I really like system programming, system development, and writing mobile applications or websites, I really like music and games.**
+- 💬 Ask me about **That's awesome! As a fellow programmer who enjoys music and gaming, you have a diverse set of interests. Balancing the logical and creative aspects of programming with the emotional and artistic experiences of music and gaming can be quite fulfilling. Whether you're diving into coding challenges, exploring new genres of music, or immersing yourself in captivating game worlds, there's always something exciting to explore and create. If you have any specific questions or if there's a particular aspect of programming, music, or gaming you'd like to discuss, feel free to ask!**
 
 - 📫 How to reach me **anhdev99@gmail.com**
 
