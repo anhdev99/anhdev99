@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnhDev99 (Steven) - Fullstack Developer</title>
+    <meta name="description" content="Portfolio of AnhDev99 (Steven), a passionate Fullstack Developer from Vietnam specializing in C#, .NET, Vue.js, and more.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header class="header">
+        <a href="#" class="logo">AnhDev99<span class="dot">.</span></a>
+        
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+        <div class="theme-toggle" id="theme-btn">
+            <i class="fas fa-moon"></i>
+        </div>
+
+        <div id="menu-icon" class="fas fa-bars"></div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content" data-aos="fade-right">
+            <h3>Hello, I am</h3>
+            <h1>AnhDev99 (Steven)</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>A passionate Fullstack developer from Vietnam, crafting robust and scalable web applications. Currently exploring the frontiers of AI and .NET.</p>
+            
+            <div class="social-media">
+                <a href="https://github.com/anhdev99" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/anhdev99" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/anhdev99" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://fb.com/anhdev99" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            
+            <a href="#contact" class="btn">Connect With Me</a>
+        </div>
+        
+        <div class="home-img" data-aos="zoom-in">
+            <!-- Ideally we'd have a profile image here. Using a placeholder or FontAwesome icon for now -->
+            <div class="img-placeholder">
+                <i class="fas fa-terminal main-icon"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img" data-aos="fade-right">
+            <div class="about-card">
+                <i class="fas fa-laptop-code"></i>
+                <div class="exp">
+                    <h4>Experience</h4>
+                    <p>Building Solutions</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="about-content" data-aos="fade-left">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Fullstack Developer based in Vietnam</h3>
+            <p>I'm currently working at <strong>Altek Dong Thap, DThU</strong>. I have a strong passion for solving complex problems and creating intuitive user experiences.
+            <br><br>
+            I balance my logical side with creative interests in music and gaming. I believe in continuous learning and am currently expanding my knowledge in <strong>C#, .NET, Vue.js, and AI</strong>.</p>
+            
+            <a href="#" class="btn">Read More</a> 
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        
+        <div class="skills-container" data-aos="fade-up">
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-box">
+                    <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+                    <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                    <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                    <span class="skill-tag"><i class="fab fa-vuejs"></i> Vue.js</span>
+                    <span class="skill-tag"><i class="fab fa-react"></i> React</span>
+                    <span class="skill-tag"><i class="fas fa-wind"></i> Tailwind</span>
+                    <span class="skill-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                    <span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">Nuxt.js</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skill-box">
+                    <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                    <span class="skill-tag"><i class="fas fa-code"></i> C# / .NET</span>
+                    <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                    <span class="skill-tag"><i class="fas fa-database"></i> SQL Server</span>
+                    <span class="skill-tag"><i class="fas fa-database"></i> MongoDB</span>
+                    <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                    <span class="skill-tag"><i class="fas fa-server"></i> Nginx</span>
+                    <span class="skill-tag">Redis</span>
+                    <span class="skill-tag">RabbitMQ</span>
+                    <span class="skill-tag">Kafka</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Tools & Others</h3>
+                <div class="skill-box">
+                    <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+                    <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                    <span class="skill-tag"><i class="fab fa-linux"></i> Linux</span>
+                    <span class="skill-tag"><i class="fab fa-unity"></i> Unity</span>
+                    <span class="skill-tag"><i class="fab fa-jenkins"></i> Jenkins</span>
+                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">Elasticsearch</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        
+        <div class="contact-container" data-aos="zoom-in-up">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>anhdev99@gmail.com</p>
+                    <a href="mailto:anhdev99@gmail.com">Send Email</a>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-share-alt"></i>
+                    <h3>Socials</h3>
+                    <div class="social-links">
+                        <a href="https://dev.to/anhdev99" target="_blank">Dev.to</a>
+                        <a href="https://stackoverflow.com/users/anhdev99" target="_blank">StackOverflow</a>
+                        <a href="https://codesandbox.com/anhdev99" target="_blank">CodeSandbox</a>
+                    </div>
+                </div>
+            </div>
+            
+            <form action="mailto:anhdev99@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" name="name" required>
+                    <input type="email" placeholder="Email Address" name="email" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Subject" name="subject" required>
+                </div>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by AnhDev99 | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fas fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scroll Reveal / Typed JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
