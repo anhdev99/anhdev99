@@ -3,8 +3,8 @@
 Trang tĩnh (HTML/JS) + một CSS build sẵn từ Tailwind. Không thư viện ngoài khi chạy, không có bước build trên GitHub Pages: phải build ở máy và commit `css/site.css`.
 
 ## Cấu trúc
-- `index.html`: Profile (giới thiệu, chuyên môn, cách làm việc, bài mới, liên hệ), song ngữ Việt/Anh (khối `data-l="vi"` / `data-l="en"`).
-- `blog/index.html`: danh sách Blog (trạng thái trống khi chưa có bài). `blog/_template/index.html`: mẫu bài, `noindex`, thư mục bắt đầu bằng `_` nên GitHub Pages không xuất bản.
+- `index.html`: trang chủ blog. `about/`: giới thiệu. `topics/<mảng>/`: trang từng mảng. `blog/index.html`: tất cả bài; `blog/<slug>/`: bài (bài mẫu `blog/sample-*`, `noindex`, không vào sitemap). Song ngữ bằng `data-l="vi"` / `data-l="en"`.
+- `blog/_template/index.html`: mẫu bài, `noindex`, thư mục bắt đầu bằng `_` nên GitHub Pages không xuất bản.
 - `src/tailwind.css`: nguồn Tailwind v4, token trong `@theme`. `css/site.css`: bản build đã minify (commit). `css/fonts.css`: `@font-face` cho phông tự lưu trong `fonts/`.
 - `js/script.js`: đổi ngôn ngữ (lưu `localStorage`, dùng chung mọi trang), mô tả trang lấy từ `data-vi`/`data-en` của `<meta name="description">`, năm ở footer.
 - `package.json`, `package-lock.json`: Tailwind CLI 4.3.5 (devDependency). `node_modules/` không commit.

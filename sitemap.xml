@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://anhdev99.github.io/anhdev99/</loc></url>
+  <url><loc>https://anhdev99.github.io/anhdev99/about/</loc></url>
   <url><loc>https://anhdev99.github.io/anhdev99/blog/</loc></url>
+  <url><loc>https://anhdev99.github.io/anhdev99/topics/teaching/</loc></url>
+  <url><loc>https://anhdev99.github.io/anhdev99/topics/dev/</loc></url>
+  <url><loc>https://anhdev99.github.io/anhdev99/topics/research/</loc></url>
 </urlset>
