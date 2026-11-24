@@ -1,198 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnhDev99 (Steven) - Fullstack Developer</title>
-    <meta name="description" content="Portfolio of AnhDev99 (Steven), a passionate Fullstack Developer from Vietnam specializing in C#, .NET, Vue.js, and more.">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>anhdev99 - Nguyễn Tuấn Kiệt (Fullstack Developer)</title>
+<meta name="description" content="Trang giới thiệu của Nguyễn Tuấn Kiệt (anhdev99), Fullstack Developer tại Việt Nam, làm việc với C#/.NET, Vue.js và các công nghệ web.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://anhdev99.github.io/anhdev99/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="anhdev99">
+<meta property="og:title" content="anhdev99 - Nguyễn Tuấn Kiệt (Fullstack Developer)">
+<meta property="og:description" content="Trang giới thiệu của Nguyễn Tuấn Kiệt (anhdev99), Fullstack Developer tại Việt Nam, làm việc với C#/.NET, Vue.js và các công nghệ web.">
+<meta property="og:url" content="https://anhdev99.github.io/anhdev99/">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    <!-- Custom Cursor -->
-    <div class="cursor-dot" data-cursor-dot></div>
-    <div class="cursor-outline" data-cursor-outline></div>
+<a class="skip" href="#main"><span data-l="vi">Bỏ qua tới nội dung</span><span data-l="en">Skip to content</span></a>
 
-    <header class="header">
-        <a href="#" class="logo">AnhDev99<span class="dot">.</span></a>
-        
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        
-        <div class="theme-toggle" id="theme-btn">
-            <i class="fas fa-moon"></i>
-        </div>
+<header class="header">
+  <div class="wrap header-in">
+    <a class="logo" href="#top">anhdev99</a>
+    <nav class="nav" aria-label="Menu">
+      <a href="#about"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></a>
+      <a href="#expertise"><span data-l="vi">Chuyên môn</span><span data-l="en">Expertise</span></a>
+      <a href="#how"><span data-l="vi">Cách làm việc</span><span data-l="en">How I work</span></a>
+      <a href="#contact"><span data-l="vi">Liên hệ</span><span data-l="en">Contact</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Ngôn ngữ / Language">
+      <button type="button" data-set-lang="vi" lang="vi" aria-label="Tiếng Việt">VI</button>
+      <button type="button" data-set-lang="en" lang="en" aria-label="English">EN</button>
+    </div>
+  </div>
+</header>
 
-        <div id="menu-icon" class="fas fa-bars"></div>
-    </header>
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero-in">
+      <div class="avatar" aria-hidden="true">NK</div>
+      <div>
+        <p class="eyebrow"><span data-l="vi">Xin chào, tôi là</span><span data-l="en">Hi, I'm</span></p>
+        <h1>Nguyễn Tuấn Kiệt</h1>
+        <p class="role">anhdev99 &middot; Fullstack Developer</p>
+        <p class="lead">
+          <span data-l="vi">Tôi xây dựng ứng dụng web từ giao diện tới máy chủ, với nền tảng chính là C#/.NET và Vue.js.</span>
+          <span data-l="en">I build web applications end to end, from the interface to the server, working mainly with C#/.NET and Vue.js.</span>
+        </p>
+        <div class="actions">
+          <a class="btn" href="mailto:anhdev99@gmail.com"><span data-l="vi">Liên hệ</span><span data-l="en">Get in touch</span></a>
+          <a class="btn ghost" href="https://github.com/anhdev99" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="home" id="home">
-        <div class="home-content" data-aos="fade-right">
-            <h3>Hello, I am</h3>
-            <h1>AnhDev99 (Steven)</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>A passionate Fullstack developer from Vietnam, crafting robust and scalable web applications. Currently exploring the frontiers of AI and .NET.</p>
-            
-            <div class="social-media">
-                <a href="https://github.com/anhdev99" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/anhdev99" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://twitter.com/anhdev99" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://fb.com/anhdev99" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            </div>
-            
-            <a href="#contact" class="btn">Connect With Me</a>
-        </div>
-        
-        <div class="home-img" data-aos="zoom-in">
-            <!-- Ideally we'd have a profile image here. Using a placeholder or FontAwesome icon for now -->
-            <div class="img-placeholder">
-                <i class="fas fa-terminal main-icon"></i>
-            </div>
-        </div>
-    </section>
+  <section class="sec" id="about" aria-labelledby="h-about">
+    <div class="wrap narrow">
+      <h2 id="h-about"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></h2>
+      <div data-l="vi">
+        <p>Tôi là Nguyễn Tuấn Kiệt, còn được biết đến với tên anhdev99 (Steven), lập trình viên fullstack tại Việt Nam. Hiện tôi làm việc tại Altek Đồng Tháp và DThU.</p>
+        <p>Tôi đang tiếp tục đào sâu C#/.NET, Vue.js và AI. Ngoài công việc, tôi dành thời gian cho âm nhạc và game.</p>
+      </div>
+      <div data-l="en">
+        <p>I'm Nguyễn Tuấn Kiệt, also known as anhdev99 (Steven), a fullstack developer based in Vietnam. I currently work at Altek Dong Thap and DThU.</p>
+        <p>I'm deepening my skills in C#/.NET, Vue.js and AI. Outside of work, I enjoy music and gaming.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="about" id="about">
-        <div class="about-img" data-aos="fade-right">
-            <div class="about-card">
-                <i class="fas fa-laptop-code"></i>
-                <div class="exp">
-                    <h4>Experience</h4>
-                    <p>Building Solutions</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="about-content" data-aos="fade-left">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Fullstack Developer based in Vietnam</h3>
-            <p>I'm currently working at <strong>Altek Dong Thap, DThU</strong>. I have a strong passion for solving complex problems and creating intuitive user experiences.
-            <br><br>
-            I balance my logical side with creative interests in music and gaming. I believe in continuous learning and am currently expanding my knowledge in <strong>C#, .NET, Vue.js, and AI</strong>.</p>
-            
-            <a href="#" class="btn">Read More</a> 
-        </div>
-    </section>
+  <section class="sec alt" id="expertise" aria-labelledby="h-exp">
+    <div class="wrap">
+      <h2 id="h-exp"><span data-l="vi">Chuyên môn</span><span data-l="en">Expertise</span></h2>
+      <p class="sub"><span data-l="vi">Các công nghệ tôi sử dụng trong công việc và tự học.</span><span data-l="en">Technologies I use at work and in self-directed learning.</span></p>
+      <div class="grid">
+        <article class="card">
+          <h3>Backend</h3>
+          <ul class="tags"><li>C# / .NET</li><li>Node.js</li><li>Python</li></ul>
+        </article>
+        <article class="card">
+          <h3>Frontend</h3>
+          <ul class="tags"><li>Vue.js</li><li>Nuxt.js</li><li>React</li><li>Next.js</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>Tailwind CSS</li><li>Bootstrap</li></ul>
+        </article>
+        <article class="card">
+          <h3><span data-l="vi">Dữ liệu &amp; hạ tầng</span><span data-l="en">Data &amp; infrastructure</span></h3>
+          <ul class="tags"><li>SQL Server</li><li>PostgreSQL</li><li>MongoDB</li><li>Redis</li><li>Elasticsearch</li><li>RabbitMQ</li><li>Kafka</li><li>Nginx</li></ul>
+        </article>
+        <article class="card">
+          <h3><span data-l="vi">DevOps &amp; công cụ</span><span data-l="en">DevOps &amp; tools</span></h3>
+          <ul class="tags"><li>Docker</li><li>Git</li><li>Jenkins</li><li>Linux</li><li>Firebase</li></ul>
+        </article>
+        <article class="card">
+          <h3><span data-l="vi">Khác</span><span data-l="en">Other</span></h3>
+          <ul class="tags"><li>Flutter</li><li>Unity</li></ul>
+        </article>
+        <article class="card">
+          <h3><span data-l="vi">Đang học</span><span data-l="en">Currently learning</span></h3>
+          <ul class="tags">
+            <li><span data-l="vi">C#/.NET (nâng cao)</span><span data-l="en">C#/.NET (advanced)</span></li>
+            <li>Vue.js</li><li>AI</li>
+          </ul>
+        </article>
+      </div>
+      <p class="note">
+        <span data-l="vi">Dự án tôi làm phần lớn là nội bộ nên không công bố chi tiết. Mã nguồn công khai có trên GitHub.</span>
+        <span data-l="en">Most of my work is internal and not published here. Public code is available on GitHub.</span>
+      </p>
+      <a class="btn ghost" href="https://github.com/anhdev99" target="_blank" rel="noopener noreferrer"><span data-l="vi">Xem GitHub</span><span data-l="en">View GitHub</span></a>
+    </div>
+  </section>
 
-    <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-        
-        <div class="skills-container" data-aos="fade-up">
-            <div class="skill-category">
-                <h3>Frontend</h3>
-                <div class="skill-box">
-                    <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
-                    <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
-                    <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
-                    <span class="skill-tag"><i class="fab fa-vuejs"></i> Vue.js</span>
-                    <span class="skill-tag"><i class="fab fa-react"></i> React</span>
-                    <span class="skill-tag"><i class="fas fa-wind"></i> Tailwind</span>
-                    <span class="skill-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
-                    <span class="skill-tag">Next.js</span>
-                    <span class="skill-tag">Nuxt.js</span>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <h3>Backend</h3>
-                <div class="skill-box">
-                    <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
-                    <span class="skill-tag"><i class="fas fa-code"></i> C# / .NET</span>
-                    <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
-                    <span class="skill-tag"><i class="fas fa-database"></i> SQL Server</span>
-                    <span class="skill-tag"><i class="fas fa-database"></i> MongoDB</span>
-                    <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span>
-                    <span class="skill-tag"><i class="fas fa-server"></i> Nginx</span>
-                    <span class="skill-tag">Redis</span>
-                    <span class="skill-tag">RabbitMQ</span>
-                    <span class="skill-tag">Kafka</span>
-                </div>
-            </div>
-            
-            <div class="skill-category">
-                <h3>Tools & Others</h3>
-                <div class="skill-box">
-                    <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
-                    <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
-                    <span class="skill-tag"><i class="fab fa-linux"></i> Linux</span>
-                    <span class="skill-tag"><i class="fab fa-unity"></i> Unity</span>
-                    <span class="skill-tag"><i class="fab fa-jenkins"></i> Jenkins</span>
-                    <span class="skill-tag">Firebase</span>
-                    <span class="skill-tag">Flutter</span>
-                    <span class="skill-tag">Elasticsearch</span>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="sec" id="how" aria-labelledby="h-how">
+    <div class="wrap">
+      <h2 id="h-how"><span data-l="vi">Cách làm việc</span><span data-l="en">How I work</span></h2>
+      <ol class="grid steps">
+        <li class="card">
+          <h3><span data-l="vi">Làm trọn vòng</span><span data-l="en">End to end</span></h3>
+          <p><span data-l="vi">Tôi làm cả giao diện, API lẫn cơ sở dữ liệu, nên chú ý tới cách các phần ghép với nhau.</span><span data-l="en">I work across the interface, APIs and databases, so I pay attention to how the pieces fit together.</span></p>
+        </li>
+        <li class="card">
+          <h3><span data-l="vi">Học liên tục</span><span data-l="en">Always learning</span></h3>
+          <p><span data-l="vi">Hiện tôi đang đào sâu C#/.NET, Vue.js và AI.</span><span data-l="en">I'm currently deepening C#/.NET, Vue.js and AI.</span></p>
+        </li>
+        <li class="card">
+          <h3><span data-l="vi">Chú trọng vận hành</span><span data-l="en">Built to run</span></h3>
+          <p><span data-l="vi">Tôi quen làm với Docker, Linux, Nginx và CI để ứng dụng chạy ổn định ngoài môi trường phát triển.</span><span data-l="en">I'm used to working with Docker, Linux, Nginx and CI so applications run reliably beyond development.</span></p>
+        </li>
+      </ol>
+    </div>
+  </section>
 
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        
-        <div class="contact-container" data-aos="zoom-in-up">
-            <div class="contact-info">
-                <div class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>anhdev99@gmail.com</p>
-                    <a href="mailto:anhdev99@gmail.com">Send Email</a>
-                </div>
-                
-                <div class="contact-card">
-                    <i class="fas fa-share-alt"></i>
-                    <h3>Socials</h3>
-                    <div class="social-links">
-                        <a href="https://dev.to/anhdev99" target="_blank">Dev.to</a>
-                        <a href="https://stackoverflow.com/users/anhdev99" target="_blank">StackOverflow</a>
-                        <a href="https://codesandbox.com/anhdev99" target="_blank">CodeSandbox</a>
-                    </div>
-                </div>
-            </div>
-            
-            <form action="mailto:anhdev99@gmail.com" method="post" enctype="text/plain" class="contact-form">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name" name="name" required>
-                    <input type="email" placeholder="Email Address" name="email" required>
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="Subject" name="subject" required>
-                </div>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </form>
-        </div>
-    </section>
+  <section class="sec alt" id="contact" aria-labelledby="h-contact">
+    <div class="wrap narrow">
+      <h2 id="h-contact"><span data-l="vi">Liên hệ</span><span data-l="en">Contact</span></h2>
+      <p class="sub"><span data-l="vi">Bạn muốn trao đổi về công việc hoặc hợp tác? Gửi email cho tôi.</span><span data-l="en">Want to talk about work or a collaboration? Send me an email.</span></p>
+      <div class="actions">
+        <a class="btn" href="mailto:anhdev99@gmail.com">anhdev99@gmail.com</a>
+        <a class="btn ghost" href="https://github.com/anhdev99" target="_blank" rel="noopener noreferrer">github.com/anhdev99</a>
+      </div>
+    </div>
+  </section>
+</main>
 
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2025 by AnhDev99 | All Rights Reserved.</p>
-        </div>
-        <div class="footer-iconTop">
-            <a href="#home"><i class="fas fa-angle-up"></i></a>
-        </div>
-    </footer>
+<footer class="footer">
+  <div class="wrap">&copy; <span id="year">2026</span> Nguyễn Tuấn Kiệt (anhdev99).</div>
+</footer>
 
-    <!-- Scroll Reveal / Typed JS -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
