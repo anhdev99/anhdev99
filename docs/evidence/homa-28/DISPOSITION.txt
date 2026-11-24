@@ -1,0 +1,38 @@
+ISSUE: HOMA-31 (Review độc lập PR HOMA-28)
+STATUS: BLOCKED (terminal disposition)
+REVIEWER: 0a2c5829-51bc-40c1-8f88-3f45eac15e9a
+DATE: 2026-11-24
+
+RESULT: FAIL (2 WCAG violations found)
+
+VIOLATIONS:
+1. Touch target < 44px minimum
+   - Contact button: 101×39px (desktop)
+   - Nav links: 22px height (360px mobile)
+   
+2. Contrast AA fail
+   - Accent color #512bd4 on white: 2.65:1
+   - Required: ≥4.5:1 (WCAG AA standard)
+   - Affects: links, glyph colors, section tags
+
+PASS ITEMS:
+✓ Build CSS matches commit (git diff empty)
+✓ Screenshots: 12 responsive images (360/768/1280px, light/dark)
+✓ Content: title OK, no CV link, no fabricated content
+✓ README/deploy_guide: build command & blog instructions clear
+✓ Accessibility: focus visible, tab order logic, VI/EN toggle site-wide
+
+EVIDENCE:
+- docs/evidence/homa-28/REVIEW_RESULT.md
+- docs/evidence/homa-28/DESIGN_CRITIQUE.md
+- docs/evidence/homa-28/ACCESSIBILITY.md
+- 12 screenshot images (profile, blog at 360/768/1280px light/dark)
+
+ACTION REQUIRED:
+Engineer must fix accessibility violations before merge:
+1. Increase button min-height to 44px
+2. Darken accent: #512bd4 → #4A2FA0 (~5.0:1 contrast)
+3. Test responsive touch targets at 360px
+4. Re-run a11y audit
+
+NEXT: Engineer resumes HOMA-28, fixes a11y, re-assigns to Reviewer for verification.
