@@ -1,23 +1,31 @@
 # Hướng dẫn chạy và đăng trang
 
-Trang tĩnh thuần (HTML/CSS/JS), không thư viện ngoài, không bước build.
+Trang tĩnh (HTML/JS) + một CSS build sẵn từ Tailwind. Không thư viện ngoài khi chạy, không có bước build trên GitHub Pages: phải build ở máy và commit `css/site.css`.
 
 ## Cấu trúc
-- `index.html`: nội dung song ngữ Việt/Anh (khối `data-l="vi"` / `data-l="en"`).
-- `css/style.css`: giao diện theo bố cục blog dạng tạp chí (tham khảo devas.life, theme Ghost "Source"): thanh trên, header 3 cột có thẻ lớn ở giữa, hàng "Chuyên môn", danh sách "Cách làm việc", khối liên hệ, footer màu nhấn. Ảnh thẻ là "cover" vẽ bằng CSS, không tải ảnh ngoài. Chế độ sáng/tối theo hệ thống.
-- `js/script.js`: đổi ngôn ngữ (lưu `localStorage`, mặc định theo trình duyệt), năm ở footer.
-- `favicon.svg`, `robots.txt`, `sitemap.xml`.
-- `docs/brief.md`: brief nội dung.
+- `index.html`: Profile (giới thiệu, chuyên môn, cách làm việc, bài mới, liên hệ), song ngữ Việt/Anh (khối `data-l="vi"` / `data-l="en"`).
+- `blog/index.html`: danh sách Blog (trạng thái trống khi chưa có bài). `blog/_template/index.html`: mẫu bài, `noindex`, thư mục bắt đầu bằng `_` nên GitHub Pages không xuất bản.
+- `src/tailwind.css`: nguồn Tailwind v4, token trong `@theme`. `css/site.css`: bản build đã minify (commit). `css/fonts.css`: `@font-face` cho phông tự lưu trong `fonts/`.
+- `js/script.js`: đổi ngôn ngữ (lưu `localStorage`, dùng chung mọi trang), mô tả trang lấy từ `data-vi`/`data-en` của `<meta name="description">`, năm ở footer.
+- `package.json`, `package-lock.json`: Tailwind CLI 4.3.5 (devDependency). `node_modules/` không commit.
+- `favicon.svg`, `robots.txt`, `sitemap.xml`, `docs/` (brief, bằng chứng kiểm).
+
+## Build
+```
+npm install
+npm run build
+```
+Kiểm trước khi merge: chạy `npm run build` rồi `git status` không được báo `css/site.css` thay đổi.
 
 ## Chạy thử cục bộ
-Mở thẳng `index.html` bằng trình duyệt, không cần server.
+Liên kết nội bộ là đường dẫn tương đối, nhưng nên dùng server tĩnh: `python -m http.server 8765` rồi mở `http://127.0.0.1:8765/`. Tắt server khi xong.
 
-## Sửa nội dung
-Sửa cả hai khối `vi` và `en` trong `index.html`. Nếu đổi mô tả trang, sửa thêm `META` trong `js/script.js`.
+## Thêm bài mới
+Xem mục "Thêm bài blog" trong `README.md`.
 
 ## Đăng lên GitHub Pages
-Đã bật tại https://anhdev99.github.io/anhdev99/ (branch `main`, thư mục `/`). Trang chỉ cập nhật sau khi chủ sở hữu duyệt và merge nhánh `redesign/profile-2026` vào `main`.
-Nếu đổi URL, cập nhật `canonical`, `og:url` trong `index.html`, `robots.txt`, `sitemap.xml` và README.
+Bật tại https://anhdev99.github.io/anhdev99/ (branch `main`, thư mục `/`). Trang cập nhật sau khi merge vào `main`.
+Nếu đổi URL, cập nhật `canonical`, `og:url` ở mọi trang, `robots.txt`, `sitemap.xml` và README.
 
 ## Chưa dùng
-Ảnh đại diện (đang dùng chữ "NK"), liên kết mạng xã hội, CV: chờ chủ sở hữu xác nhận.
+Ảnh đại diện, liên kết mạng xã hội, CV: chờ chủ sở hữu xác nhận.

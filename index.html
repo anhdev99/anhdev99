@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>anhdev99 - Nguyễn Tuấn Kiệt (Fullstack Developer)</title>
-<meta name="description" content="Trang giới thiệu của Nguyễn Tuấn Kiệt (anhdev99), Fullstack Developer tại Việt Nam, làm việc với C#/.NET, Vue.js và các công nghệ web.">
+<meta name="description" content="Trang giới thiệu của Nguyễn Tuấn Kiệt (anhdev99), Fullstack Developer tại Việt Nam, làm việc với C#/.NET, Vue.js và các công nghệ web." data-vi="Trang giới thiệu của Nguyễn Tuấn Kiệt (anhdev99), Fullstack Developer tại Việt Nam, làm việc với C#/.NET, Vue.js và các công nghệ web." data-en="Personal page of Nguyễn Tuấn Kiệt (anhdev99), a Fullstack Developer based in Vietnam working with C#/.NET, Vue.js and web technologies.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#15171a" media="(prefers-color-scheme: dark)">
@@ -22,20 +22,21 @@
 
 <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/fonts.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/site.css">
 </head>
-<body>
+<body class="bg-bg font-sans text-base font-normal text-fg antialiased">
 <a class="skip" href="#main"><span data-l="vi">Bỏ qua tới nội dung</span><span data-l="en">Skip to content</span></a>
 
-<header class="nav outer" id="top">
-  <div class="nav-inner inner">
+<header class="px-page text-small font-medium" id="top">
+  <div class="nav-inner">
     <a class="logo" href="#top" aria-label="anhdev99, về đầu trang">anhdev99</a>
 
     <nav class="menu" aria-label="Menu">
-      <a href="#about"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></a>
-      <a href="#stack"><span data-l="vi">Chuyên môn</span><span data-l="en">Expertise</span></a>
-      <a href="#practice"><span data-l="vi">Cách làm việc</span><span data-l="en">How I work</span></a>
-      <a href="https://github.com/anhdev99" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="nav-link" href="#about"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></a>
+      <a class="nav-link" href="#stack"><span data-l="vi">Chuyên môn</span><span data-l="en">Expertise</span></a>
+      <a class="nav-link" href="#practice"><span data-l="vi">Cách làm việc</span><span data-l="en">How I work</span></a>
+      <a class="nav-link" href="blog/">Blog</a>
+      <a class="nav-link" href="https://github.com/anhdev99" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
 
     <div class="actions">
@@ -49,11 +50,10 @@
 </header>
 
 <main id="main">
-  <!-- Magazine header: one large card in the middle, short cards either side. -->
-  <section class="mag outer" id="about" aria-labelledby="h-name">
-    <div class="mag-inner inner">
-      <article class="card card--hero">
-        <div class="cover cover--hero" aria-hidden="true">
+  <section class="px-page mt-10 lg:mt-6" id="about" aria-labelledby="h-name">
+    <div class="mag mx-auto grid w-full max-w-site grid-cols-1 gap-gutter overflow-hidden md:grid-cols-16">
+      <article class="card mag-hero gap-7 md:col-span-10 md:col-start-1 md:row-start-1 xl:col-span-8 xl:col-start-5">
+        <div class="cover cover-hero" aria-hidden="true">
           <pre class="code"><span class="c">// anhdev99</span>
 <span class="k">const</span> kiet = {
   role: <span class="s">"Fullstack Developer"</span>,
@@ -62,19 +62,19 @@
 };</pre>
         </div>
         <div class="card-body">
-          <p class="tag"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></p>
-          <h1 class="card-title" id="h-name">Nguyễn Tuấn Kiệt</h1>
-          <p class="card-excerpt">
+          <p class="tag mb-3"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></p>
+          <h1 class="font-display text-hero font-semibold text-balance" id="h-name">Nguyễn Tuấn Kiệt</h1>
+          <p class="mt-3 max-w-xl text-lead">
             <span data-l="vi">Tôi xây dựng ứng dụng web từ giao diện tới máy chủ, với nền tảng chính là C#/.NET và Vue.js.</span>
             <span data-l="en">I build web applications end to end, from the interface to the server, working mainly with C#/.NET and Vue.js.</span>
           </p>
-          <p class="card-meta">anhdev99 (Steven) <span class="dash">—</span> Fullstack Developer, <span data-l="vi">Việt Nam</span><span data-l="en">Vietnam</span></p>
+          <p class="card-meta mt-3.5">anhdev99 (Steven) <span class="mx-0.5">—</span> Fullstack Developer, <span data-l="vi">Việt Nam</span><span data-l="en">Vietnam</span></p>
         </div>
       </article>
 
-      <div class="mag-side mag-left">
+      <div class="mag-left flex flex-col gap-gutter md:col-span-6 md:col-start-11 md:row-start-1 xl:col-span-4 xl:col-start-1">
         <article class="card">
-          <div class="cover cover--a" aria-hidden="true"><span class="glyph">{ }</span></div>
+          <div class="cover cover-a" aria-hidden="true"><span class="glyph">{ }</span></div>
           <div class="card-body">
             <p class="tag"><span data-l="vi">Hiện tại</span><span data-l="en">Now</span></p>
             <h2 class="card-title">
@@ -95,9 +95,9 @@
         </article>
       </div>
 
-      <div class="mag-side mag-right">
+      <div class="mag-right flex flex-col gap-gutter md:col-span-full md:row-start-2 md:flex-row xl:col-span-4 xl:col-start-13 xl:row-start-1 xl:flex-col">
         <article class="card">
-          <div class="cover cover--c" aria-hidden="true"><span class="glyph">&#9835; &#9654;</span></div>
+          <div class="cover cover-c" aria-hidden="true"><span class="glyph">&#9835; &#9654;</span></div>
           <div class="card-body">
             <p class="tag"><span data-l="vi">Ngoài giờ</span><span data-l="en">Off hours</span></p>
             <h2 class="card-title">
@@ -122,70 +122,68 @@
     </div>
   </section>
 
-  <!-- Featured row: the layers of the stack. -->
-  <section class="featured outer" id="stack" aria-labelledby="h-stack">
-    <div class="featured-inner inner">
+  <section class="px-page mt-section" id="stack" aria-labelledby="h-stack">
+    <div class="mx-auto w-full max-w-site overflow-hidden">
       <h2 class="section-title" id="h-stack"><span data-l="vi">Chuyên môn</span><span data-l="en">Expertise</span></h2>
-      <div class="featured-feed">
-        <article class="card card--mini">
-          <div class="cover cover--a" aria-hidden="true"><span class="glyph">Vue</span></div>
+      <div class="featured-feed grid grid-cols-1 gap-gutter sm:grid-cols-2 lg:grid-cols-4">
+        <article class="card card-mini">
+          <div class="cover cover-a" aria-hidden="true"><span class="glyph">Vue</span></div>
           <div class="card-body">
             <h3 class="card-title"><span data-l="vi">Giao diện</span><span data-l="en">Interface</span></h3>
             <p class="card-meta"><strong>Vue.js</strong>, Nuxt.js, React, Next.js, JavaScript, HTML5, CSS3, Tailwind CSS, Bootstrap</p>
           </div>
         </article>
-        <article class="card card--mini">
-          <div class="cover cover--d" aria-hidden="true"><span class="glyph">C#</span></div>
+        <article class="card card-mini">
+          <div class="cover cover-d" aria-hidden="true"><span class="glyph">C#</span></div>
           <div class="card-body">
             <h3 class="card-title"><span data-l="vi">Ứng dụng</span><span data-l="en">Application</span></h3>
             <p class="card-meta"><strong>C# / .NET</strong>, Node.js, Python</p>
           </div>
         </article>
-        <article class="card card--mini">
-          <div class="cover cover--b" aria-hidden="true"><span class="glyph">SQL</span></div>
+        <article class="card card-mini">
+          <div class="cover cover-b" aria-hidden="true"><span class="glyph">SQL</span></div>
           <div class="card-body">
             <h3 class="card-title"><span data-l="vi">Dữ liệu &amp; hàng đợi</span><span data-l="en">Data &amp; messaging</span></h3>
             <p class="card-meta">SQL Server, PostgreSQL, MongoDB, Redis, Elasticsearch, RabbitMQ, Kafka</p>
           </div>
         </article>
-        <article class="card card--mini">
-          <div class="cover cover--c" aria-hidden="true"><span class="glyph">&gt;_</span></div>
+        <article class="card card-mini">
+          <div class="cover cover-c" aria-hidden="true"><span class="glyph">&gt;_</span></div>
           <div class="card-body">
             <h3 class="card-title"><span data-l="vi">Triển khai</span><span data-l="en">Delivery</span></h3>
             <p class="card-meta">Docker, Nginx, Linux, Jenkins, Git, Firebase</p>
           </div>
         </article>
       </div>
-      <p class="note">
+      <p class="mt-7 text-sm text-muted">
         <span data-l="vi">Ngoài ra: Flutter, Unity. Dự án tôi làm phần lớn là nội bộ nên không công bố chi tiết.</span>
         <span data-l="en">Also: Flutter, Unity. Most of my work is internal and not published here.</span>
       </p>
     </div>
   </section>
 
-  <!-- List feed: how I work. -->
-  <section class="list outer" id="practice" aria-labelledby="h-practice">
-    <div class="list-inner inner">
-      <h2 class="section-title" id="h-practice"><span data-l="vi">Cách làm việc</span><span data-l="en">How I work</span></h2>
-      <div class="feed">
-        <article class="card card--row">
-          <div class="cover cover--d" aria-hidden="true"><span class="glyph">01</span></div>
+  <section class="px-page mt-section" id="practice" aria-labelledby="h-practice">
+    <div class="mx-auto w-full max-w-site md:grid md:grid-cols-16 md:gap-x-gutter">
+      <h2 class="section-title col-feed" id="h-practice"><span data-l="vi">Cách làm việc</span><span data-l="en">How I work</span></h2>
+      <div class="col-feed flex flex-col gap-gutter">
+        <article class="card card-row">
+          <div class="cover cover-d" aria-hidden="true"><span class="glyph">01</span></div>
           <div class="card-body">
-            <h3 class="card-title"><span data-l="vi">Làm trọn vòng</span><span data-l="en">End to end</span></h3>
+            <h3 class="card-title text-title-lg"><span data-l="vi">Làm trọn vòng</span><span data-l="en">End to end</span></h3>
             <p class="card-excerpt"><span data-l="vi">Tôi làm cả giao diện, API lẫn cơ sở dữ liệu, nên chú ý tới cách các phần ghép với nhau.</span><span data-l="en">I work across the interface, APIs and databases, so I pay attention to how the pieces fit together.</span></p>
           </div>
         </article>
-        <article class="card card--row">
-          <div class="cover cover--a" aria-hidden="true"><span class="glyph">02</span></div>
+        <article class="card card-row">
+          <div class="cover cover-a" aria-hidden="true"><span class="glyph">02</span></div>
           <div class="card-body">
-            <h3 class="card-title"><span data-l="vi">Học liên tục</span><span data-l="en">Always learning</span></h3>
+            <h3 class="card-title text-title-lg"><span data-l="vi">Học liên tục</span><span data-l="en">Always learning</span></h3>
             <p class="card-excerpt"><span data-l="vi">Hiện tôi đang đào sâu C#/.NET, Vue.js và AI.</span><span data-l="en">I'm currently deepening C#/.NET, Vue.js and AI.</span></p>
           </div>
         </article>
-        <article class="card card--row">
-          <div class="cover cover--b" aria-hidden="true"><span class="glyph">03</span></div>
+        <article class="card card-row">
+          <div class="cover cover-b" aria-hidden="true"><span class="glyph">03</span></div>
           <div class="card-body">
-            <h3 class="card-title"><span data-l="vi">Chú trọng vận hành</span><span data-l="en">Built to run</span></h3>
+            <h3 class="card-title text-title-lg"><span data-l="vi">Chú trọng vận hành</span><span data-l="en">Built to run</span></h3>
             <p class="card-excerpt"><span data-l="vi">Tôi quen làm với Docker, Linux, Nginx và CI để ứng dụng chạy ổn định ngoài môi trường phát triển.</span><span data-l="en">I'm used to working with Docker, Linux, Nginx and CI so applications run reliably beyond development.</span></p>
           </div>
         </article>
@@ -193,12 +191,19 @@
     </div>
   </section>
 
-  <!-- Call to action: contact. -->
-  <section class="cta outer" id="contact" aria-labelledby="h-contact">
-    <div class="cta-inner inner">
-      <div class="cta-content">
-        <h2 class="cta-title" id="h-contact"><span data-l="vi">Cùng làm việc nhé?</span><span data-l="en">Let's work together</span></h2>
-        <p class="cta-desc">
+  <section class="px-page mt-section" id="latest" aria-labelledby="h-latest" hidden>
+    <div class="mx-auto w-full max-w-site md:grid md:grid-cols-16 md:gap-x-gutter">
+      <h2 class="section-title col-feed" id="h-latest"><span data-l="vi">Bài viết mới</span><span data-l="en">Latest posts</span></h2>
+      <div class="col-feed flex flex-col gap-gutter"></div>
+      <p class="col-feed mt-5 text-small font-medium"><a class="text-accent-text underline underline-offset-4" href="blog/"><span data-l="vi">Xem tất cả</span><span data-l="en">All posts</span></a></p>
+    </div>
+  </section>
+
+  <section class="px-page mt-section" id="contact" aria-labelledby="h-contact">
+    <div class="cta-box">
+      <div class="max-w-xl">
+        <h2 class="font-display text-cta font-semibold text-balance" id="h-contact"><span data-l="vi">Cùng làm việc nhé?</span><span data-l="en">Let's work together</span></h2>
+        <p class="mt-3 text-lg text-muted">
           <span data-l="vi">Bạn muốn trao đổi về công việc hoặc hợp tác? Gửi email cho tôi.</span>
           <span data-l="en">Want to talk about work or a collaboration? Send me an email.</span>
         </p>
@@ -211,16 +216,17 @@
   </section>
 </main>
 
-<footer class="footer outer">
-  <div class="footer-bar inner">
+<footer class="mt-footer bg-accent px-page text-small font-medium text-on-accent">
+  <div class="footer-bar">
     <a class="logo" href="#top">anhdev99</a>
     <nav class="footer-menu" aria-label="Footer">
       <a href="#about"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></a>
       <a href="#stack"><span data-l="vi">Chuyên môn</span><span data-l="en">Expertise</span></a>
+      <a href="blog/">Blog</a>
       <a href="#contact"><span data-l="vi">Liên hệ</span><span data-l="en">Contact</span></a>
       <a href="https://github.com/anhdev99" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
-    <p class="copyright">&copy; <span id="year">2026</span> Nguyễn Tuấn Kiệt</p>
+    <p class="copyright text-on-accent-muted">&copy; <span id="year">2026</span> Nguyễn Tuấn Kiệt</p>
   </div>
 </footer>
 
