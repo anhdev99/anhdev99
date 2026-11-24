@@ -133,7 +133,7 @@ html[lang="en"] [data-l="vi"] { display: none; }
   .lang button { @apply min-h-touch min-w-touch cursor-pointer rounded-pill px-3 py-1.5 text-meta leading-none font-semibold tracking-wide text-muted; }
   .lang button[aria-pressed="true"] { @apply bg-bg text-fg shadow-sm; }
 
-  .logo { @apply font-display text-2xl leading-none font-semibold tracking-tight whitespace-nowrap; }
+  .logo { @apply inline-flex min-h-touch items-center font-display text-2xl leading-none font-semibold tracking-tight whitespace-nowrap; }
   .nav-inner { @apply mx-auto grid w-full max-w-site items-center gap-x-6 pt-5; grid-template-columns: auto 1fr; grid-template-areas: "logo actions" "menu menu"; }
   .nav-inner > .logo { grid-area: logo; }
   .nav-inner > .actions { grid-area: actions; }
@@ -161,11 +161,10 @@ html[lang="en"] [data-l="vi"] { display: none; }
     .mag-right > .card + .card::before { display: block; }
     .mag .mag-hero::before { display: block; top: 0; left: calc(-.5 * var(--spacing-gutter)); width: 1px; height: 100%; }
   }
-  .menu { @apply mt-4 flex gap-6 overflow-x-auto border-y border-line py-1; scrollbar-width: none; }
-  .menu::-webkit-scrollbar { display: none; }
+  .menu { @apply mt-4 flex flex-wrap gap-x-5 border-y border-line py-1; }
   @media (width >= 62rem) {
     .nav-inner { @apply h-25 pt-0; grid-template-columns: auto 1fr auto; grid-template-areas: "logo menu actions"; }
-    .menu { @apply m-0 ml-6 gap-7 overflow-visible border-0 p-0; }
+    .menu { @apply m-0 ml-6 gap-x-7 border-0 p-0; }
   }
 
   .cta-box { @apply mx-auto flex w-full max-w-site flex-col items-center gap-9 rounded-card bg-soft text-center; padding: clamp(3rem, 2rem + 3.6vw, 5rem) clamp(1.25rem, 1rem + 2.7vw, 4rem); }
