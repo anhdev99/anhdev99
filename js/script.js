@@ -1,79 +1,35 @@
-/* Toggle Icon Navbar */
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+(function () {
+  var META = {
+    vi: 'Trang giới thiệu của Nguyễn Tuấn Kiệt (anhdev99), Fullstack Developer tại Việt Nam, làm việc với C#/.NET, Vue.js và các công nghệ web.',
+    en: 'Personal page of Nguyễn Tuấn Kiệt (anhdev99), a Fullstack Developer based in Vietnam working with C#/.NET, Vue.js and web technologies.'
+  };
+  var KEY = 'lang';
+  var root = document.documentElement;
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
-};
+  function saved() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
 
-/* Scroll Sections Active Link */
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
-
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if(top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        };
+  function setLang(lang, persist) {
+    if (lang !== 'vi' && lang !== 'en') lang = 'vi';
+    root.lang = lang;
+    var desc = document.querySelector('meta[name="description"]');
+    if (desc) desc.content = META[lang];
+    document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-set-lang') === lang));
     });
+    if (persist) {
+      try { localStorage.setItem(KEY, lang); } catch (e) {}
+    }
+  }
 
-    /* Sticky Navbar */
-    let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 100);
+  var initial = saved() || ((navigator.language || 'vi').slice(0, 2) === 'vi' ? 'vi' : 'en');
+  setLang(initial, false);
 
-    /* Remove toggle icon and navbar when click navbar link (scroll) */
-    menuIcon.classList.remove('fa-times');
-    navbar.classList.remove('active');
-};
+  document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.getAttribute('data-set-lang'), true); });
+  });
 
-/* Scroll Reveal */
-ScrollReveal({
-    // reset: true,
-    distance: '80px',
-    duration: 2000,
-    delay: 200
-});
-
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
-
-/* Typed JS */
-const typed = new Typed('.multiple-text', {
-    strings: ['Fullstack Developer', 'Gamer', '.NET Enthusiast', 'AI Learner'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-});
-
-/* AOS Init */
-AOS.init();
-
-/* Custom Cursor */
-const cursorDot = document.querySelector('[data-cursor-dot]');
-const cursorOutline = document.querySelector('[data-cursor-outline]');
-
-window.addEventListener('mousemove', function(e) {
-    const posX = e.clientX;
-    const posY = e.clientY;
-
-    cursorDot.style.left = `${posX}px`;
-    cursorDot.style.top = `${posY}px`;
-
-    // animate outline
-    cursorOutline.animate({
-        left: `${posX}px`,
-        top: `${posY}px`
-    }, { duration: 500, fill: "forwards" });
-});
+  var year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
+})();
