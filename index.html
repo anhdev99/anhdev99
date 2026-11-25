@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>anhdev99 - Nguyễn Tuấn Kiệt (Fullstack Developer)</title>
-<meta name="description" content="Trang giới thiệu của Nguyễn Tuấn Kiệt (anhdev99), Fullstack Developer tại Việt Nam, làm việc với C#/.NET, Vue.js và các công nghệ web." data-vi="Trang giới thiệu của Nguyễn Tuấn Kiệt (anhdev99), Fullstack Developer tại Việt Nam, làm việc với C#/.NET, Vue.js và các công nghệ web." data-en="Personal page of Nguyễn Tuấn Kiệt (anhdev99), a Fullstack Developer based in Vietnam working with C#/.NET, Vue.js and web technologies.">
+<title>anhdev99 - Nguyễn Tuấn Kiệt: blog giảng dạy, AI agent và nghiên cứu</title>
+<meta name="description" content="Ghi chép về giảng dạy khoa học máy tính, xây AI agent và nghiên cứu computer vision, chatbot." data-vi="Ghi chép về giảng dạy khoa học máy tính, xây AI agent và nghiên cứu computer vision, chatbot." data-en="Notes on teaching computer science, building AI agents and researching computer vision and chatbots.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#15171a" media="(prefers-color-scheme: dark)">
@@ -13,8 +13,8 @@
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="anhdev99">
-<meta property="og:title" content="anhdev99 - Nguyễn Tuấn Kiệt (Fullstack Developer)">
-<meta property="og:description" content="Trang giới thiệu của Nguyễn Tuấn Kiệt (anhdev99), Fullstack Developer tại Việt Nam, làm việc với C#/.NET, Vue.js và các công nghệ web.">
+<meta property="og:title" content="anhdev99 - Nguyễn Tuấn Kiệt: blog giảng dạy, AI agent và nghiên cứu">
+<meta property="og:description" content="Ghi chép về giảng dạy khoa học máy tính, xây AI agent và nghiên cứu computer vision, chatbot.">
 <meta property="og:url" content="https://anhdev99.github.io/anhdev99/">
 <meta property="og:locale" content="vi_VN">
 <meta property="og:locale:alternate" content="en_US">
@@ -29,14 +29,14 @@
 
 <header class="px-page text-small font-medium" id="top">
   <div class="nav-inner">
-    <a class="logo" href="#top" aria-label="anhdev99, về đầu trang">anhdev99</a>
+    <a class="logo" href="./" aria-label="anhdev99, về trang chủ">anhdev99</a>
 
     <nav class="menu" aria-label="Menu">
-      <a class="nav-link" href="#about"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></a>
-      <a class="nav-link" href="#stack"><span data-l="vi">Chuyên môn</span><span data-l="en">Expertise</span></a>
-      <a class="nav-link" href="#practice"><span data-l="vi">Cách làm việc</span><span data-l="en">How I work</span></a>
-      <a class="nav-link" href="blog/">Blog</a>
-      <a class="nav-link" href="https://github.com/anhdev99" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="nav-link" href="blog/"><span data-l="vi">Bài viết</span><span data-l="en">Posts</span></a>
+      <a class="nav-link" href="topics/teaching/"><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span></a>
+      <a class="nav-link" href="topics/dev/"><span data-l="vi">Dev</span><span data-l="en">Dev</span></a>
+      <a class="nav-link" href="topics/research/"><span data-l="vi">Nghiên cứu</span><span data-l="en">Research</span></a>
+      <a class="nav-link" href="about/"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></a>
     </nav>
 
     <div class="actions">
@@ -44,173 +44,139 @@
         <button type="button" data-set-lang="vi" lang="vi" aria-label="Tiếng Việt">VI</button>
         <button type="button" data-set-lang="en" lang="en" aria-label="English">EN</button>
       </div>
-      <a class="button" href="#contact"><span data-l="vi">Liên hệ</span><span data-l="en">Contact</span></a>
+      <a class="button" href="about/#contact"><span data-l="vi">Liên hệ</span><span data-l="en">Contact</span></a>
     </div>
   </div>
 </header>
 
 <main id="main">
-  <section class="px-page mt-10 lg:mt-6" id="about" aria-labelledby="h-name">
-    <div class="mag mx-auto grid w-full max-w-site grid-cols-1 gap-gutter overflow-hidden md:grid-cols-16">
-      <article class="card mag-hero gap-7 md:col-span-10 md:col-start-1 md:row-start-1 xl:col-span-8 xl:col-start-5">
-        <div class="cover cover-hero" aria-hidden="true">
-          <pre class="code"><span class="c">// anhdev99</span>
-<span class="k">const</span> kiet = {
-  role: <span class="s">"Fullstack Developer"</span>,
-  stack: [<span class="s">"C#/.NET"</span>, <span class="s">"Vue.js"</span>],
-  based: <span class="s"><span data-l="vi">"Việt Nam"</span><span data-l="en">"Vietnam"</span></span>,
-};</pre>
-        </div>
-        <div class="card-body">
-          <p class="tag mb-3"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></p>
-          <h1 class="font-display text-hero font-semibold text-balance" id="h-name">Nguyễn Tuấn Kiệt</h1>
-          <p class="mt-3 max-w-xl text-lead">
-            <span data-l="vi">Tôi xây dựng ứng dụng web từ giao diện tới máy chủ, với nền tảng chính là C#/.NET và Vue.js.</span>
-            <span data-l="en">I build web applications end to end, from the interface to the server, working mainly with C#/.NET and Vue.js.</span>
-          </p>
-          <p class="card-meta mt-3.5">anhdev99 (Steven) <span class="mx-0.5">—</span> Fullstack Developer, <span data-l="vi">Việt Nam</span><span data-l="en">Vietnam</span></p>
-        </div>
-      </article>
-
-      <div class="mag-left flex flex-col gap-gutter md:col-span-6 md:col-start-11 md:row-start-1 xl:col-span-4 xl:col-start-1">
-        <article class="card">
-          <div class="cover cover-a" aria-hidden="true"><span class="glyph">{ }</span></div>
-          <div class="card-body">
-            <p class="tag"><span data-l="vi">Hiện tại</span><span data-l="en">Now</span></p>
-            <h2 class="card-title">
-              <span data-l="vi">Làm việc tại Altek Đồng Tháp và DThU</span>
-              <span data-l="en">Working at Altek Dong Thap and DThU</span>
-            </h2>
-            <p class="card-meta"><span data-l="vi">Đồng Tháp, Việt Nam</span><span data-l="en">Dong Thap, Vietnam</span></p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-body">
-            <p class="tag"><span data-l="vi">Đang học</span><span data-l="en">Learning</span></p>
-            <h2 class="card-title">
-              <span data-l="vi">Đào sâu C#/.NET, Vue.js và AI</span>
-              <span data-l="en">Going deeper into C#/.NET, Vue.js and AI</span>
-            </h2>
-          </div>
-        </article>
+  <section class="px-page mt-10 lg:mt-6" aria-labelledby="h-home">
+    <div class="mx-auto w-full max-w-site md:grid md:grid-cols-16 md:gap-x-gutter">
+      <div class="col-feed">
+        <h1 class="font-display text-cta font-semibold text-balance" id="h-home">anhdev99</h1>
+        <p class="mt-3 max-w-xl text-lead text-muted"><span data-l="vi">Ghi chép về giảng dạy khoa học máy tính, xây AI agent và nghiên cứu computer vision, chatbot.</span><span data-l="en">Notes on teaching computer science, building AI agents and researching computer vision and chatbots.</span></p>
+        <p class="mt-4 text-small font-medium"><a class="inline-flex min-h-touch items-center text-accent-text underline underline-offset-4" href="about/"><span data-l="vi">Về tôi</span><span data-l="en">About me</span>&nbsp;&rarr;</a></p>
       </div>
+    </div>
+  </section>
 
-      <div class="mag-right flex flex-col gap-gutter md:col-span-full md:row-start-2 md:flex-row xl:col-span-4 xl:col-start-13 xl:row-start-1 xl:flex-col">
-        <article class="card">
-          <div class="cover cover-c" aria-hidden="true"><span class="glyph">&#9835; &#9654;</span></div>
+  <section class="px-page mt-section" aria-labelledby="h-topics">
+    <div class="mx-auto w-full max-w-site overflow-hidden">
+      <h2 class="section-title" id="h-topics"><span data-l="vi">Chủ đề</span><span data-l="en">Topics</span></h2>
+      <div class="featured-feed grid grid-cols-1 gap-gutter md:grid-cols-3">
+      <article class="card">
+        <a class="card-link" href="topics/teaching/">
+          <div class="cover cover-d aspect-golden max-md:aspect-banner" aria-hidden="true"><span class="glyph">&lt;/&gt;</span></div>
           <div class="card-body">
-            <p class="tag"><span data-l="vi">Ngoài giờ</span><span data-l="en">Off hours</span></p>
-            <h2 class="card-title">
-              <span data-l="vi">Âm nhạc và game</span>
-              <span data-l="en">Music and gaming</span>
-            </h2>
+            <h3 class="card-title text-title-lg font-display"><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span></h3>
+            <p class="card-excerpt"><span data-l="vi">Bài giảng và ghi chú cho các môn OOP, React Native, Frontend, Backend.</span><span data-l="en">Lecture notes for OOP, React Native, Frontend and Backend courses.</span></p>
+            <p class="card-meta"><span data-l="vi">4 bài</span><span data-l="en">4 posts</span></p>
           </div>
-        </article>
-        <article class="card">
-          <a class="card-link" href="https://github.com/anhdev99" target="_blank" rel="noopener noreferrer">
+        </a>
+      </article>
+      <article class="card">
+        <a class="card-link" href="topics/dev/">
+          <div class="cover cover-a aspect-golden max-md:aspect-banner" aria-hidden="true"><span class="glyph">&gt;_</span></div>
+          <div class="card-body">
+            <h3 class="card-title text-title-lg font-display"><span data-l="vi">Dev</span><span data-l="en">Dev</span></h3>
+            <p class="card-excerpt"><span data-l="vi">Ghi chép khi xây AI agent và công cụ phát triển.</span><span data-l="en">Notes from building AI agents and developer tools.</span></p>
+            <p class="card-meta"><span data-l="vi">2 bài</span><span data-l="en">2 posts</span></p>
+          </div>
+        </a>
+      </article>
+      <article class="card">
+        <a class="card-link" href="topics/research/">
+          <div class="cover cover-b aspect-golden max-md:aspect-banner" aria-hidden="true"><span class="glyph">[·]</span></div>
+          <div class="card-body">
+            <h3 class="card-title text-title-lg font-display"><span data-l="vi">Nghiên cứu</span><span data-l="en">Research</span></h3>
+            <p class="card-excerpt"><span data-l="vi">Ghi chép nghiên cứu về computer vision và chatbot.</span><span data-l="en">Research notes on computer vision and chatbots.</span></p>
+            <p class="card-meta"><span data-l="vi">2 bài</span><span data-l="en">2 posts</span></p>
+          </div>
+        </a>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-page mt-section" aria-labelledby="h-latest">
+    <div class="mx-auto w-full max-w-site md:grid md:grid-cols-16 md:gap-x-gutter">
+      <h2 class="section-title col-feed" id="h-latest"><span data-l="vi">Bài mới</span><span data-l="en">Latest</span></h2>
+      <div class="col-feed">
+<nav class="mb-8 flex flex-wrap gap-2 px-1 py-1.5" aria-label="Lọc theo chủ đề / Filter by topic">
+          <a class="chip" href="./" aria-current="page"><span data-l="vi">Tất cả</span><span data-l="en">All</span></a>
+          <a class="chip" href="topics/teaching/"><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span></a>
+          <a class="chip" href="topics/dev/"><span data-l="vi">Dev</span><span data-l="en">Dev</span></a>
+          <a class="chip" href="topics/research/"><span data-l="vi">Nghiên cứu</span><span data-l="en">Research</span></a>
+        </nav>
+        <div class="flex flex-col gap-gutter">
+        <article class="card card-row">
+          <a class="card-link card-row" href="blog/sample-1-oop-lop-va-doi-tuong/">
+            <div class="cover cover-d" aria-hidden="true"><span class="glyph">OOP</span></div>
             <div class="card-body">
-              <p class="tag"><span data-l="vi">Mã nguồn</span><span data-l="en">Code</span></p>
-              <h2 class="card-title">
-                <span data-l="vi">Mã nguồn công khai trên GitHub</span>
-                <span data-l="en">Public code on GitHub</span>
-              </h2>
-              <p class="card-meta">github.com/anhdev99 <span aria-hidden="true">&#8599;</span></p>
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-d" aria-hidden="true"></span><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display"><span data-l="vi">Bài mẫu: Lớp và đối tượng (OOP, phần 1)</span><span data-l="en">Sample: Classes and objects (OOP, part 1)</span></h3>
+              <p class="card-excerpt"><span data-l="vi">Bài mẫu minh hoạ giao diện bài viết về OOP. Nội dung thật sẽ thay sau.</span><span data-l="en">Sample post showing the layout for a post about OOP. Real content will replace it.</span></p>
+              <p class="card-meta font-mono"><time datetime="2026-11-20"><span data-l="vi">20/11/2026</span><span data-l="en">20 Nov 2026</span></time> · oop · <span data-l="vi">Phần 1/3</span><span data-l="en">Part 1/3</span></p>
             </div>
           </a>
         </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="px-page mt-section" id="stack" aria-labelledby="h-stack">
-    <div class="mx-auto w-full max-w-site overflow-hidden">
-      <h2 class="section-title" id="h-stack"><span data-l="vi">Chuyên môn</span><span data-l="en">Expertise</span></h2>
-      <div class="featured-feed grid grid-cols-1 gap-gutter sm:grid-cols-2 lg:grid-cols-4">
-        <article class="card card-mini">
-          <div class="cover cover-a" aria-hidden="true"><span class="glyph">Vue</span></div>
-          <div class="card-body">
-            <h3 class="card-title"><span data-l="vi">Giao diện</span><span data-l="en">Interface</span></h3>
-            <p class="card-meta"><strong>Vue.js</strong>, Nuxt.js, React, Next.js, JavaScript, HTML5, CSS3, Tailwind CSS, Bootstrap</p>
-          </div>
-        </article>
-        <article class="card card-mini">
-          <div class="cover cover-d" aria-hidden="true"><span class="glyph">C#</span></div>
-          <div class="card-body">
-            <h3 class="card-title"><span data-l="vi">Ứng dụng</span><span data-l="en">Application</span></h3>
-            <p class="card-meta"><strong>C# / .NET</strong>, Node.js, Python</p>
-          </div>
-        </article>
-        <article class="card card-mini">
-          <div class="cover cover-b" aria-hidden="true"><span class="glyph">SQL</span></div>
-          <div class="card-body">
-            <h3 class="card-title"><span data-l="vi">Dữ liệu &amp; hàng đợi</span><span data-l="en">Data &amp; messaging</span></h3>
-            <p class="card-meta">SQL Server, PostgreSQL, MongoDB, Redis, Elasticsearch, RabbitMQ, Kafka</p>
-          </div>
-        </article>
-        <article class="card card-mini">
-          <div class="cover cover-c" aria-hidden="true"><span class="glyph">&gt;_</span></div>
-          <div class="card-body">
-            <h3 class="card-title"><span data-l="vi">Triển khai</span><span data-l="en">Delivery</span></h3>
-            <p class="card-meta">Docker, Nginx, Linux, Jenkins, Git, Firebase</p>
-          </div>
-        </article>
-      </div>
-      <p class="mt-7 text-sm text-muted">
-        <span data-l="vi">Ngoài ra: Flutter, Unity. Dự án tôi làm phần lớn là nội bộ nên không công bố chi tiết.</span>
-        <span data-l="en">Also: Flutter, Unity. Most of my work is internal and not published here.</span>
-      </p>
-    </div>
-  </section>
-
-  <section class="px-page mt-section" id="practice" aria-labelledby="h-practice">
-    <div class="mx-auto w-full max-w-site md:grid md:grid-cols-16 md:gap-x-gutter">
-      <h2 class="section-title col-feed" id="h-practice"><span data-l="vi">Cách làm việc</span><span data-l="en">How I work</span></h2>
-      <div class="col-feed flex flex-col gap-gutter">
         <article class="card card-row">
-          <div class="cover cover-d" aria-hidden="true"><span class="glyph">01</span></div>
-          <div class="card-body">
-            <h3 class="card-title text-title-lg"><span data-l="vi">Làm trọn vòng</span><span data-l="en">End to end</span></h3>
-            <p class="card-excerpt"><span data-l="vi">Tôi làm cả giao diện, API lẫn cơ sở dữ liệu, nên chú ý tới cách các phần ghép với nhau.</span><span data-l="en">I work across the interface, APIs and databases, so I pay attention to how the pieces fit together.</span></p>
-          </div>
+          <a class="card-link card-row" href="blog/sample-2-oop-ke-thua/">
+            <div class="cover cover-d" aria-hidden="true"><span class="glyph">OOP</span></div>
+            <div class="card-body">
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-d" aria-hidden="true"></span><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display"><span data-l="vi">Bài mẫu: Kế thừa (OOP, phần 2)</span><span data-l="en">Sample: Inheritance (OOP, part 2)</span></h3>
+              <p class="card-excerpt"><span data-l="vi">Bài mẫu minh hoạ giao diện bài viết về kế thừa. Nội dung thật sẽ thay sau.</span><span data-l="en">Sample post showing the layout for a post about inheritance. Real content will replace it.</span></p>
+              <p class="card-meta font-mono"><time datetime="2026-11-18"><span data-l="vi">18/11/2026</span><span data-l="en">18 Nov 2026</span></time> · oop · <span data-l="vi">Phần 2/3</span><span data-l="en">Part 2/3</span></p>
+            </div>
+          </a>
         </article>
         <article class="card card-row">
-          <div class="cover cover-a" aria-hidden="true"><span class="glyph">02</span></div>
-          <div class="card-body">
-            <h3 class="card-title text-title-lg"><span data-l="vi">Học liên tục</span><span data-l="en">Always learning</span></h3>
-            <p class="card-excerpt"><span data-l="vi">Hiện tôi đang đào sâu C#/.NET, Vue.js và AI.</span><span data-l="en">I'm currently deepening C#/.NET, Vue.js and AI.</span></p>
-          </div>
+          <a class="card-link card-row" href="blog/sample-5-ai-agent-vong-lap/">
+            <div class="cover cover-a" aria-hidden="true"><span class="glyph">&gt;_</span></div>
+            <div class="card-body">
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-a" aria-hidden="true"></span><span data-l="vi">Dev</span><span data-l="en">Dev</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display"><span data-l="vi">Bài mẫu: Vòng lặp cơ bản của một AI agent</span><span data-l="en">Sample: The basic loop of an AI agent</span></h3>
+              <p class="card-excerpt"><span data-l="vi">Bài mẫu minh hoạ giao diện bài viết về AI agent. Nội dung thật sẽ thay sau.</span><span data-l="en">Sample post showing the layout for a post about AI agents. Real content will replace it.</span></p>
+              <p class="card-meta font-mono"><time datetime="2026-11-16"><span data-l="vi">16/11/2026</span><span data-l="en">16 Nov 2026</span></time> · ai-agent</p>
+            </div>
+          </a>
         </article>
         <article class="card card-row">
-          <div class="cover cover-b" aria-hidden="true"><span class="glyph">03</span></div>
-          <div class="card-body">
-            <h3 class="card-title text-title-lg"><span data-l="vi">Chú trọng vận hành</span><span data-l="en">Built to run</span></h3>
-            <p class="card-excerpt"><span data-l="vi">Tôi quen làm với Docker, Linux, Nginx và CI để ứng dụng chạy ổn định ngoài môi trường phát triển.</span><span data-l="en">I'm used to working with Docker, Linux, Nginx and CI so applications run reliably beyond development.</span></p>
-          </div>
+          <a class="card-link card-row" href="blog/sample-3-react-native-man-hinh-dau-tien/">
+            <div class="cover cover-d" aria-hidden="true"><span class="glyph">RN</span></div>
+            <div class="card-body">
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-d" aria-hidden="true"></span><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display"><span data-l="vi">Bài mẫu: Màn hình đầu tiên với React Native</span><span data-l="en">Sample: A first screen in React Native</span></h3>
+              <p class="card-excerpt"><span data-l="vi">Bài mẫu minh hoạ giao diện bài viết về React Native. Nội dung thật sẽ thay sau.</span><span data-l="en">Sample post showing the layout for a post about React Native. Real content will replace it.</span></p>
+              <p class="card-meta font-mono"><time datetime="2026-11-12"><span data-l="vi">12/11/2026</span><span data-l="en">12 Nov 2026</span></time> · react-native</p>
+            </div>
+          </a>
         </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="px-page mt-section" id="latest" aria-labelledby="h-latest" hidden>
-    <div class="mx-auto w-full max-w-site md:grid md:grid-cols-16 md:gap-x-gutter">
-      <h2 class="section-title col-feed" id="h-latest"><span data-l="vi">Bài viết mới</span><span data-l="en">Latest posts</span></h2>
-      <div class="col-feed flex flex-col gap-gutter"></div>
-      <p class="col-feed mt-5 text-small font-medium"><a class="text-accent-text underline underline-offset-4" href="blog/"><span data-l="vi">Xem tất cả</span><span data-l="en">All posts</span></a></p>
-    </div>
-  </section>
-
-  <section class="px-page mt-section" id="contact" aria-labelledby="h-contact">
-    <div class="cta-box">
-      <div class="max-w-xl">
-        <h2 class="font-display text-cta font-semibold text-balance" id="h-contact"><span data-l="vi">Cùng làm việc nhé?</span><span data-l="en">Let's work together</span></h2>
-        <p class="mt-3 text-lg text-muted">
-          <span data-l="vi">Bạn muốn trao đổi về công việc hoặc hợp tác? Gửi email cho tôi.</span>
-          <span data-l="en">Want to talk about work or a collaboration? Send me an email.</span>
-        </p>
-      </div>
-      <div class="mailbar">
-        <span class="mailbar-addr">anhdev99@gmail.com</span>
-        <a class="button" href="mailto:anhdev99@gmail.com"><span data-l="vi">Gửi email</span><span data-l="en">Email me</span></a>
+        <article class="card card-row">
+          <a class="card-link card-row" href="blog/sample-7-cv-ghi-chu-doc-bai-bao/">
+            <div class="cover cover-b" aria-hidden="true"><span class="glyph">[·]</span></div>
+            <div class="card-body">
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-b" aria-hidden="true"></span><span data-l="vi">Nghiên cứu</span><span data-l="en">Research</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display"><span data-l="vi">Bài mẫu: Khung ghi chú đọc bài báo computer vision</span><span data-l="en">Sample: A note template for reading CV papers</span></h3>
+              <p class="card-excerpt"><span data-l="vi">Bài mẫu minh hoạ giao diện bài viết về ghi chú đọc bài báo computer vision. Nội dung thật sẽ thay sau.</span><span data-l="en">Sample post showing the layout for a post about reading notes for computer vision papers. Real content will replace it.</span></p>
+              <p class="card-meta font-mono"><time datetime="2026-11-09"><span data-l="vi">09/11/2026</span><span data-l="en">9 Nov 2026</span></time> · computer-vision</p>
+            </div>
+          </a>
+        </article>
+        <article class="card card-row">
+          <a class="card-link card-row" href="blog/sample-4-frontend-backend-tong-quan/">
+            <div class="cover cover-d" aria-hidden="true"><span class="glyph">API</span></div>
+            <div class="card-body">
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-d" aria-hidden="true"></span><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display"><span data-l="vi">Bài mẫu: Frontend gọi Backend qua API</span><span data-l="en">Sample: Frontend calling a Backend API</span></h3>
+              <p class="card-excerpt"><span data-l="vi">Bài mẫu minh hoạ giao diện bài viết về Frontend và Backend. Nội dung thật sẽ thay sau.</span><span data-l="en">Sample post showing the layout for a post about Frontend and Backend. Real content will replace it.</span></p>
+              <p class="card-meta font-mono"><time datetime="2026-11-05"><span data-l="vi">05/11/2026</span><span data-l="en">5 Nov 2026</span></time> · frontend, backend</p>
+            </div>
+          </a>
+        </article>
+        </div>
+        <p class="mt-7 text-small font-medium"><a class="inline-flex min-h-touch items-center text-accent-text underline underline-offset-4" href="blog/"><span data-l="vi">Xem tất cả bài</span><span data-l="en">All posts</span>&nbsp;&rarr;</a></p>
       </div>
     </div>
   </section>
@@ -218,12 +184,13 @@
 
 <footer class="mt-footer bg-accent px-page text-small font-medium text-on-accent">
   <div class="footer-bar">
-    <a class="logo" href="#top">anhdev99</a>
+    <a class="logo" href="./">anhdev99</a>
     <nav class="footer-menu" aria-label="Footer">
-      <a href="#about"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></a>
-      <a href="#stack"><span data-l="vi">Chuyên môn</span><span data-l="en">Expertise</span></a>
-      <a href="blog/">Blog</a>
-      <a href="#contact"><span data-l="vi">Liên hệ</span><span data-l="en">Contact</span></a>
+      <a href="blog/"><span data-l="vi">Bài viết</span><span data-l="en">Posts</span></a>
+      <a href="topics/teaching/"><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span></a>
+      <a href="topics/dev/"><span data-l="vi">Dev</span><span data-l="en">Dev</span></a>
+      <a href="topics/research/"><span data-l="vi">Nghiên cứu</span><span data-l="en">Research</span></a>
+      <a href="about/"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></a>
       <a href="https://github.com/anhdev99" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
     <p class="copyright text-on-accent-muted">&copy; <span id="year">2026</span> Nguyễn Tuấn Kiệt</p>

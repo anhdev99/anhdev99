@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Blog - anhdev99 (Nguyễn Tuấn Kiệt)</title>
-<meta name="description" content="Blog của anhdev99: ghi chép kỹ thuật." data-vi="Blog của anhdev99: ghi chép kỹ thuật." data-en="anhdev99's blog: technical notes.">
+<title>Bài viết - anhdev99 (Nguyễn Tuấn Kiệt)</title>
+<meta name="description" content="Tất cả bài viết của anhdev99, mới nhất trước." data-vi="Tất cả bài viết của anhdev99, mới nhất trước." data-en="All of anhdev99's posts, newest first.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#15171a" media="(prefers-color-scheme: dark)">
@@ -13,8 +13,8 @@
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="anhdev99">
-<meta property="og:title" content="Blog - anhdev99 (Nguyễn Tuấn Kiệt)">
-<meta property="og:description" content="Blog của anhdev99: ghi chép kỹ thuật.">
+<meta property="og:title" content="Bài viết - anhdev99 (Nguyễn Tuấn Kiệt)">
+<meta property="og:description" content="Tất cả bài viết của anhdev99, mới nhất trước.">
 <meta property="og:url" content="https://anhdev99.github.io/anhdev99/blog/">
 <meta property="og:locale" content="vi_VN">
 <meta property="og:locale:alternate" content="en_US">
@@ -32,11 +32,11 @@
     <a class="logo" href="../" aria-label="anhdev99, về trang chủ">anhdev99</a>
 
     <nav class="menu" aria-label="Menu">
-      <a class="nav-link" href="../#about"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></a>
-      <a class="nav-link" href="../#stack"><span data-l="vi">Chuyên môn</span><span data-l="en">Expertise</span></a>
-      <a class="nav-link" href="../#practice"><span data-l="vi">Cách làm việc</span><span data-l="en">How I work</span></a>
-      <a class="nav-link" href="./" aria-current="page">Blog</a>
-      <a class="nav-link" href="https://github.com/anhdev99" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="nav-link" href="../blog/" aria-current="page"><span data-l="vi">Bài viết</span><span data-l="en">Posts</span></a>
+      <a class="nav-link" href="../topics/teaching/"><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span></a>
+      <a class="nav-link" href="../topics/dev/"><span data-l="vi">Dev</span><span data-l="en">Dev</span></a>
+      <a class="nav-link" href="../topics/research/"><span data-l="vi">Nghiên cứu</span><span data-l="en">Research</span></a>
+      <a class="nav-link" href="../about/"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></a>
     </nav>
 
     <div class="actions">
@@ -44,7 +44,7 @@
         <button type="button" data-set-lang="vi" lang="vi" aria-label="Tiếng Việt">VI</button>
         <button type="button" data-set-lang="en" lang="en" aria-label="English">EN</button>
       </div>
-      <a class="button" href="../#contact"><span data-l="vi">Liên hệ</span><span data-l="en">Contact</span></a>
+      <a class="button" href="../about/#contact"><span data-l="vi">Liên hệ</span><span data-l="en">Contact</span></a>
     </div>
   </div>
 </header>
@@ -53,32 +53,117 @@
   <section class="px-page mt-10 lg:mt-6" aria-labelledby="h-blog">
     <div class="mx-auto w-full max-w-site md:grid md:grid-cols-16 md:gap-x-gutter">
       <div class="col-feed">
-        <h1 class="font-display text-cta font-semibold text-balance" id="h-blog">Blog</h1>
-        <p class="mt-3 text-lead text-muted"><span data-l="vi">Ghi chép kỹ thuật.</span><span data-l="en">Technical notes.</span></p>
+        <h1 class="font-display text-cta font-semibold text-balance" id="h-blog"><span data-l="vi">Bài viết</span><span data-l="en">Posts</span></h1>
+        <p class="mt-3 text-lead text-muted"><span data-l="vi">Tất cả bài, mới nhất trước.</span><span data-l="en">All posts, newest first.</span></p>
       </div>
     </div>
   </section>
 
-  <section class="px-page mt-section" aria-labelledby="h-posts">
+  <section class="px-page mt-section" aria-labelledby="h-y2026">
     <div class="mx-auto w-full max-w-site md:grid md:grid-cols-16 md:gap-x-gutter">
-      <h2 class="section-title col-feed" id="h-posts"><span data-l="vi">Bài viết</span><span data-l="en">Posts</span></h2>
+      <div class="col-feed">
+<nav class="mb-8 flex flex-wrap gap-2 px-1 py-1.5" aria-label="Lọc theo chủ đề / Filter by topic">
+          <a class="chip" href="./" aria-current="page"><span data-l="vi">Tất cả</span><span data-l="en">All</span></a>
+          <a class="chip" href="../topics/teaching/"><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span></a>
+          <a class="chip" href="../topics/dev/"><span data-l="vi">Dev</span><span data-l="en">Dev</span></a>
+          <a class="chip" href="../topics/research/"><span data-l="vi">Nghiên cứu</span><span data-l="en">Research</span></a>
+        </nav>
+      </div>
+      <h2 class="section-title col-feed" id="h-y2026">2026</h2>
       <div class="col-feed flex flex-col gap-gutter">
-        <!-- Newest first. To add a post, paste this card above the empty-state block (and delete that block):
+        <!-- Empty state (use when no posts exist):
+        <div class="rounded-card bg-soft px-6 py-14 text-center">
+          <p class="font-display text-title-lg font-semibold"><span data-l="vi">Chưa có bài trong mục này.</span><span data-l="en">No posts in this topic yet.</span></p>
+        </div>
+        -->
         <article class="card card-row">
-          <a class="card-link card-row" href="TODO-slug/">
-            <div class="cover cover-a" aria-hidden="true"><span class="glyph">C#</span></div>
+          <a class="card-link card-row" href="../blog/sample-1-oop-lop-va-doi-tuong/">
+            <div class="cover cover-d" aria-hidden="true"><span class="glyph">OOP</span></div>
             <div class="card-body">
-              <h3 class="card-title text-title-lg font-display"><span data-l="vi">TODO tiêu đề</span><span data-l="en">TODO title</span></h3>
-              <p class="card-excerpt"><span data-l="vi">TODO tóm tắt</span><span data-l="en">TODO excerpt</span></p>
-              <p class="card-meta font-mono"><time datetime="2026-01-01"><span data-l="vi">01/01/2026</span><span data-l="en">1 Jan 2026</span></time> · TODO-tag</p>
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-d" aria-hidden="true"></span><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display"><span data-l="vi">Bài mẫu: Lớp và đối tượng (OOP, phần 1)</span><span data-l="en">Sample: Classes and objects (OOP, part 1)</span></h3>
+              <p class="card-excerpt"><span data-l="vi">Bài mẫu minh hoạ giao diện bài viết về OOP. Nội dung thật sẽ thay sau.</span><span data-l="en">Sample post showing the layout for a post about OOP. Real content will replace it.</span></p>
+              <p class="card-meta font-mono"><time datetime="2026-11-20"><span data-l="vi">20/11/2026</span><span data-l="en">20 Nov 2026</span></time> · oop · <span data-l="vi">Phần 1/3</span><span data-l="en">Part 1/3</span></p>
             </div>
           </a>
         </article>
-        -->
-        <div class="rounded-card bg-soft px-6 py-14 text-center">
-          <p class="font-display text-title-lg font-semibold"><span data-l="vi">Chưa có bài viết.</span><span data-l="en">No posts yet.</span></p>
-          <p class="mt-1 text-small text-muted"><span data-l="vi">Bài đầu tiên sẽ sớm có.</span><span data-l="en">First post coming soon.</span></p>
-        </div>
+        <article class="card card-row">
+          <a class="card-link card-row" href="../blog/sample-2-oop-ke-thua/">
+            <div class="cover cover-d" aria-hidden="true"><span class="glyph">OOP</span></div>
+            <div class="card-body">
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-d" aria-hidden="true"></span><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display"><span data-l="vi">Bài mẫu: Kế thừa (OOP, phần 2)</span><span data-l="en">Sample: Inheritance (OOP, part 2)</span></h3>
+              <p class="card-excerpt"><span data-l="vi">Bài mẫu minh hoạ giao diện bài viết về kế thừa. Nội dung thật sẽ thay sau.</span><span data-l="en">Sample post showing the layout for a post about inheritance. Real content will replace it.</span></p>
+              <p class="card-meta font-mono"><time datetime="2026-11-18"><span data-l="vi">18/11/2026</span><span data-l="en">18 Nov 2026</span></time> · oop · <span data-l="vi">Phần 2/3</span><span data-l="en">Part 2/3</span></p>
+            </div>
+          </a>
+        </article>
+        <article class="card card-row">
+          <a class="card-link card-row" href="../blog/sample-5-ai-agent-vong-lap/">
+            <div class="cover cover-a" aria-hidden="true"><span class="glyph">&gt;_</span></div>
+            <div class="card-body">
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-a" aria-hidden="true"></span><span data-l="vi">Dev</span><span data-l="en">Dev</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display"><span data-l="vi">Bài mẫu: Vòng lặp cơ bản của một AI agent</span><span data-l="en">Sample: The basic loop of an AI agent</span></h3>
+              <p class="card-excerpt"><span data-l="vi">Bài mẫu minh hoạ giao diện bài viết về AI agent. Nội dung thật sẽ thay sau.</span><span data-l="en">Sample post showing the layout for a post about AI agents. Real content will replace it.</span></p>
+              <p class="card-meta font-mono"><time datetime="2026-11-16"><span data-l="vi">16/11/2026</span><span data-l="en">16 Nov 2026</span></time> · ai-agent</p>
+            </div>
+          </a>
+        </article>
+        <article class="card card-row">
+          <a class="card-link card-row" href="../blog/sample-3-react-native-man-hinh-dau-tien/">
+            <div class="cover cover-d" aria-hidden="true"><span class="glyph">RN</span></div>
+            <div class="card-body">
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-d" aria-hidden="true"></span><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display"><span data-l="vi">Bài mẫu: Màn hình đầu tiên với React Native</span><span data-l="en">Sample: A first screen in React Native</span></h3>
+              <p class="card-excerpt"><span data-l="vi">Bài mẫu minh hoạ giao diện bài viết về React Native. Nội dung thật sẽ thay sau.</span><span data-l="en">Sample post showing the layout for a post about React Native. Real content will replace it.</span></p>
+              <p class="card-meta font-mono"><time datetime="2026-11-12"><span data-l="vi">12/11/2026</span><span data-l="en">12 Nov 2026</span></time> · react-native</p>
+            </div>
+          </a>
+        </article>
+        <article class="card card-row">
+          <a class="card-link card-row" href="../blog/sample-7-cv-ghi-chu-doc-bai-bao/">
+            <div class="cover cover-b" aria-hidden="true"><span class="glyph">[·]</span></div>
+            <div class="card-body">
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-b" aria-hidden="true"></span><span data-l="vi">Nghiên cứu</span><span data-l="en">Research</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display"><span data-l="vi">Bài mẫu: Khung ghi chú đọc bài báo computer vision</span><span data-l="en">Sample: A note template for reading CV papers</span></h3>
+              <p class="card-excerpt"><span data-l="vi">Bài mẫu minh hoạ giao diện bài viết về ghi chú đọc bài báo computer vision. Nội dung thật sẽ thay sau.</span><span data-l="en">Sample post showing the layout for a post about reading notes for computer vision papers. Real content will replace it.</span></p>
+              <p class="card-meta font-mono"><time datetime="2026-11-09"><span data-l="vi">09/11/2026</span><span data-l="en">9 Nov 2026</span></time> · computer-vision</p>
+            </div>
+          </a>
+        </article>
+        <article class="card card-row">
+          <a class="card-link card-row" href="../blog/sample-4-frontend-backend-tong-quan/">
+            <div class="cover cover-d" aria-hidden="true"><span class="glyph">API</span></div>
+            <div class="card-body">
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-d" aria-hidden="true"></span><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display"><span data-l="vi">Bài mẫu: Frontend gọi Backend qua API</span><span data-l="en">Sample: Frontend calling a Backend API</span></h3>
+              <p class="card-excerpt"><span data-l="vi">Bài mẫu minh hoạ giao diện bài viết về Frontend và Backend. Nội dung thật sẽ thay sau.</span><span data-l="en">Sample post showing the layout for a post about Frontend and Backend. Real content will replace it.</span></p>
+              <p class="card-meta font-mono"><time datetime="2026-11-05"><span data-l="vi">05/11/2026</span><span data-l="en">5 Nov 2026</span></time> · frontend, backend</p>
+            </div>
+          </a>
+        </article>
+        <article class="card card-row">
+          <a class="card-link card-row" href="../blog/sample-6-ai-agent-cong-cu/">
+            <div class="cover cover-a" aria-hidden="true"><span class="glyph">{ }</span></div>
+            <div class="card-body">
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-a" aria-hidden="true"></span><span data-l="vi">Dev</span><span data-l="en">Dev</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display"><span data-l="vi">Bài mẫu: Cho agent gọi công cụ</span><span data-l="en">Sample: Letting an agent call tools</span></h3>
+              <p class="card-excerpt"><span data-l="vi">Bài mẫu minh hoạ giao diện bài viết về công cụ cho agent. Nội dung thật sẽ thay sau.</span><span data-l="en">Sample post showing the layout for a post about tools for agents. Real content will replace it.</span></p>
+              <p class="card-meta font-mono"><time datetime="2026-10-28"><span data-l="vi">28/10/2026</span><span data-l="en">28 Oct 2026</span></time> · ai-agent, tooling</p>
+            </div>
+          </a>
+        </article>
+        <article class="card card-row">
+          <a class="card-link card-row" href="../blog/sample-8-chatbot-khung-danh-gia/">
+            <div class="cover cover-b" aria-hidden="true"><span class="glyph">Q&amp;A</span></div>
+            <div class="card-body">
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-b" aria-hidden="true"></span><span data-l="vi">Nghiên cứu</span><span data-l="en">Research</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display" lang="vi">Bài mẫu: Khung ghi chép thử nghiệm chatbot</h3>
+              <p class="card-excerpt" lang="vi">Bài mẫu minh hoạ giao diện bài viết về khung ghi chép thử nghiệm chatbot. Nội dung thật sẽ thay sau.</p>
+              <p class="card-meta font-mono"><time datetime="2026-10-21"><span data-l="vi">21/10/2026</span><span data-l="en">21 Oct 2026</span></time> · chatbot · <span class="badge">VI</span></p>
+            </div>
+          </a>
+        </article>
       </div>
     </div>
   </section>
@@ -88,10 +173,11 @@
   <div class="footer-bar">
     <a class="logo" href="../">anhdev99</a>
     <nav class="footer-menu" aria-label="Footer">
-      <a href="../#about"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></a>
-      <a href="../#stack"><span data-l="vi">Chuyên môn</span><span data-l="en">Expertise</span></a>
-      <a href="./">Blog</a>
-      <a href="../#contact"><span data-l="vi">Liên hệ</span><span data-l="en">Contact</span></a>
+      <a href="../blog/"><span data-l="vi">Bài viết</span><span data-l="en">Posts</span></a>
+      <a href="../topics/teaching/"><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span></a>
+      <a href="../topics/dev/"><span data-l="vi">Dev</span><span data-l="en">Dev</span></a>
+      <a href="../topics/research/"><span data-l="vi">Nghiên cứu</span><span data-l="en">Research</span></a>
+      <a href="../about/"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></a>
       <a href="https://github.com/anhdev99" target="_blank" rel="noopener noreferrer">GitHub</a>
     </nav>
     <p class="copyright text-on-accent-muted">&copy; <span id="year">2026</span> Nguyễn Tuấn Kiệt</p>

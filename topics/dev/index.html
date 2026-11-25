@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dev - anhdev99 (Nguyễn Tuấn Kiệt)</title>
+<meta name="description" content="Ghi chép khi xây AI agent và công cụ phát triển." data-vi="Ghi chép khi xây AI agent và công cụ phát triển." data-en="Notes from building AI agents and developer tools.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15171a" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://anhdev99.github.io/anhdev99/topics/dev/">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="anhdev99">
+<meta property="og:title" content="Dev - anhdev99 (Nguyễn Tuấn Kiệt)">
+<meta property="og:description" content="Ghi chép khi xây AI agent và công cụ phát triển.">
+<meta property="og:url" content="https://anhdev99.github.io/anhdev99/topics/dev/">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary">
+
+<link rel="preload" href="../../fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../css/fonts.css">
+<link rel="stylesheet" href="../../css/site.css">
+</head>
+<body class="bg-bg font-sans text-base font-normal text-fg antialiased">
+<a class="skip" href="#main"><span data-l="vi">Bỏ qua tới nội dung</span><span data-l="en">Skip to content</span></a>
+
+<header class="px-page text-small font-medium" id="top">
+  <div class="nav-inner">
+    <a class="logo" href="../../" aria-label="anhdev99, về trang chủ">anhdev99</a>
+
+    <nav class="menu" aria-label="Menu">
+      <a class="nav-link" href="../../blog/"><span data-l="vi">Bài viết</span><span data-l="en">Posts</span></a>
+      <a class="nav-link" href="../../topics/teaching/"><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span></a>
+      <a class="nav-link" href="../../topics/dev/" aria-current="page"><span data-l="vi">Dev</span><span data-l="en">Dev</span></a>
+      <a class="nav-link" href="../../topics/research/"><span data-l="vi">Nghiên cứu</span><span data-l="en">Research</span></a>
+      <a class="nav-link" href="../../about/"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></a>
+    </nav>
+
+    <div class="actions">
+      <div class="lang" role="group" aria-label="Ngôn ngữ / Language">
+        <button type="button" data-set-lang="vi" lang="vi" aria-label="Tiếng Việt">VI</button>
+        <button type="button" data-set-lang="en" lang="en" aria-label="English">EN</button>
+      </div>
+      <a class="button" href="../../about/#contact"><span data-l="vi">Liên hệ</span><span data-l="en">Contact</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="px-page mt-10 lg:mt-6" aria-labelledby="h-topic">
+    <div class="mx-auto w-full max-w-site md:grid md:grid-cols-16 md:gap-x-gutter">
+      <div class="col-feed">
+        <p class="mb-6 text-meta font-medium text-muted"><a class="underline underline-offset-4 hover:text-fg" href="../../blog/"><span data-l="vi">Bài viết</span><span data-l="en">Posts</span></a></p>
+        <p class="tag flex items-center gap-2"><span class="dot cover-a" aria-hidden="true"></span><span data-l="vi">Chủ đề</span><span data-l="en">Topic</span></p>
+        <h1 class="mt-3 font-display text-cta font-semibold text-balance" id="h-topic"><span data-l="vi">Dev</span><span data-l="en">Dev</span></h1>
+        <p class="mt-3 text-lead text-muted"><span data-l="vi">Ghi chép khi xây AI agent và công cụ phát triển.</span><span data-l="en">Notes from building AI agents and developer tools.</span></p>
+        <p class="card-meta font-mono">ai-agent · llm · tooling</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-page mt-section" aria-labelledby="h-list">
+    <div class="mx-auto w-full max-w-site md:grid md:grid-cols-16 md:gap-x-gutter">
+      <div class="col-feed">
+<nav class="mb-8 flex flex-wrap gap-2 px-1 py-1.5" aria-label="Lọc theo chủ đề / Filter by topic">
+          <a class="chip" href="../../blog/"><span data-l="vi">Tất cả</span><span data-l="en">All</span></a>
+          <a class="chip" href="../../topics/teaching/"><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span></a>
+          <a class="chip" href="../../topics/dev/" aria-current="page"><span data-l="vi">Dev</span><span data-l="en">Dev</span></a>
+          <a class="chip" href="../../topics/research/"><span data-l="vi">Nghiên cứu</span><span data-l="en">Research</span></a>
+        </nav>
+      </div>
+      <h2 class="section-title col-feed" id="h-list"><span data-l="vi">Bài viết</span><span data-l="en">Posts</span></h2>
+      <div class="col-feed flex flex-col gap-gutter">
+        <!-- Empty state (use when no posts exist):
+        <div class="rounded-card bg-soft px-6 py-14 text-center">
+          <p class="font-display text-title-lg font-semibold"><span data-l="vi">Chưa có bài trong mục này.</span><span data-l="en">No posts in this topic yet.</span></p>
+        </div>
+        -->
+        <article class="card card-row">
+          <a class="card-link card-row" href="../../blog/sample-5-ai-agent-vong-lap/">
+            <div class="cover cover-a" aria-hidden="true"><span class="glyph">&gt;_</span></div>
+            <div class="card-body">
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-a" aria-hidden="true"></span><span data-l="vi">Dev</span><span data-l="en">Dev</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display"><span data-l="vi">Bài mẫu: Vòng lặp cơ bản của một AI agent</span><span data-l="en">Sample: The basic loop of an AI agent</span></h3>
+              <p class="card-excerpt"><span data-l="vi">Bài mẫu minh hoạ giao diện bài viết về AI agent. Nội dung thật sẽ thay sau.</span><span data-l="en">Sample post showing the layout for a post about AI agents. Real content will replace it.</span></p>
+              <p class="card-meta font-mono"><time datetime="2026-11-16"><span data-l="vi">16/11/2026</span><span data-l="en">16 Nov 2026</span></time> · ai-agent</p>
+            </div>
+          </a>
+        </article>
+        <article class="card card-row">
+          <a class="card-link card-row" href="../../blog/sample-6-ai-agent-cong-cu/">
+            <div class="cover cover-a" aria-hidden="true"><span class="glyph">{ }</span></div>
+            <div class="card-body">
+              <p class="tag flex flex-wrap items-center gap-2"><span class="dot cover-a" aria-hidden="true"></span><span data-l="vi">Dev</span><span data-l="en">Dev</span><span class="badge" data-sample><span data-l="vi">Bản mẫu</span><span data-l="en">Sample</span></span></p>
+              <h3 class="card-title text-title-lg font-display"><span data-l="vi">Bài mẫu: Cho agent gọi công cụ</span><span data-l="en">Sample: Letting an agent call tools</span></h3>
+              <p class="card-excerpt"><span data-l="vi">Bài mẫu minh hoạ giao diện bài viết về công cụ cho agent. Nội dung thật sẽ thay sau.</span><span data-l="en">Sample post showing the layout for a post about tools for agents. Real content will replace it.</span></p>
+              <p class="card-meta font-mono"><time datetime="2026-10-28"><span data-l="vi">28/10/2026</span><span data-l="en">28 Oct 2026</span></time> · ai-agent, tooling</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="mt-footer bg-accent px-page text-small font-medium text-on-accent">
+  <div class="footer-bar">
+    <a class="logo" href="../../">anhdev99</a>
+    <nav class="footer-menu" aria-label="Footer">
+      <a href="../../blog/"><span data-l="vi">Bài viết</span><span data-l="en">Posts</span></a>
+      <a href="../../topics/teaching/"><span data-l="vi">Giảng dạy</span><span data-l="en">Teaching</span></a>
+      <a href="../../topics/dev/"><span data-l="vi">Dev</span><span data-l="en">Dev</span></a>
+      <a href="../../topics/research/"><span data-l="vi">Nghiên cứu</span><span data-l="en">Research</span></a>
+      <a href="../../about/"><span data-l="vi">Giới thiệu</span><span data-l="en">About</span></a>
+      <a href="https://github.com/anhdev99" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+    <p class="copyright text-on-accent-muted">&copy; <span id="year">2026</span> Nguyễn Tuấn Kiệt</p>
+  </div>
+</footer>
+
+<script src="../../js/script.js"></script>
+</body>
+</html>
